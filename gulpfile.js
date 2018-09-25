@@ -80,7 +80,12 @@ gulp.task('layout', () => {
         return file.frontMatter;
       }),
     )
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest('./public'))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      }),
+    );
 });
 
 gulp.task('browserSync', () => {

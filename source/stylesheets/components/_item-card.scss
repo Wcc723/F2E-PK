@@ -1,0 +1,39 @@
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+
+  // level 2
+  .item-image {
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+
+  .item-body {
+    border: 1px solid $primary-200;
+  }
+
+
+  // level 3
+  .item-tag {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-color: $primary;
+    writing-mode: vertical-lr;
+    padding: 15px 10px;
+    color: white;
+    letter-spacing: 5px;
+  }
+
+  .item-name, .item-price {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: $font-size-lg;
+  }
+  .item-name {
+    border-right: 1px solid $primary-200;
+  }
+}

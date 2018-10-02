@@ -3,3 +3,32 @@
 @import "functions";
 @import "helpers/variables";
 @import "bootstrap";
+
+// 區塊式內容
+@import "components/header";
+@import "components/section";
+@import "components/item-card";
+@import "components/form-square";
+@import "components/carts";
+
+// 通用類別
+@import "components/utilities";
+
+
+.btn-primary-lighter {
+  @include button-variant($primary-200, $primary-200);
+}
+
+.btn-brand-light {
+  @include button-variant($white, $primary-200);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.table {
+  th, td {
+    vertical-align: middle;
+  }
+}

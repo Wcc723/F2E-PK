@@ -1,0 +1,54 @@
+
+// background
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+// four sides
+.four-sides {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.zindex--1 {
+  z-index: -1;
+}
+
+// opacity color
+.bg-accent-80 {
+  background-color: rgba(theme-color('accent'), .8);
+}
+.bg-primary-80 {
+  background-color: rgba(theme-color('primary'), .8);
+}
+
+// write-mode
+.writing-vertical {
+  writing-mode: vertical-rl;
+}
+.writing-md-vertical {
+  @include media-breakpoint-up(md) {
+    writing-mode: vertical-rl;
+  }
+}
+
+// bg, text color
+.bg-primary-lighter {
+  background-color: $primary-200;
+}
+.text-primary-light {
+  color: $primary-500 !important;
+}
+.text-primary-lighter {
+  color: $primary-200 !important;
+}
+
+
+// spacing
+.negative-row-margin {
+  margin-left: -15px;  
+  margin-right: -15px;
+}

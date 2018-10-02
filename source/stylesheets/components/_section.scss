@@ -1,0 +1,24 @@
+
+.section {
+  .vertical-content {
+    max-height: 420px;
+    line-height: 2;
+    @include media-breakpoint-up(md) {
+      line-height: 2.5;
+    }
+  }
+  .break-vertical-block {
+    @include media-breakpoint-up(md) {
+      margin-top: -24px;
+      margin-bottom: -24px;
+    }
+  }
+
+  .section-intro-image {
+    min-height: 250px;
+    @include media-breakpoint-down(md) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+}

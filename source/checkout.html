@@ -1,0 +1,69 @@
+---
+title: 產品列表
+layout: ./source/layout.ejs
+engine: ejs
+---
+
+<section class="container my-6">
+  <div class="row">
+    <div class="col-md-8">
+      
+      <div class="p-5 bg-primary text-primary-lighter">
+        <div class="form-row mb-5">
+          <div class="col-6">
+            <h1 class="text-primary-lighter">運送</h1>
+          </div>
+          <div class="col-6 d-flex align-items-center">
+            <div class="process-steps w-100">
+              <div class="step-circle active"></div>
+              <div class="step-circle"></div>
+              <div class="step-circle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="lastname">姓氏</label>
+              <input type="text" class="form-control form-control-lg" id="lastname" placeholder="王">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="firstname">名字</label>
+              <input type="text" class="form-control form-control-lg" id="firstname" placeholder="小明">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tel">電話</label>
+          <input type="tel" class="form-control form-control-lg" id="tel" placeholder="0912-345-678">
+        </div>
+
+        <label for="city">地址</label>
+        <div class="form-row">
+          <div class="col-6">
+            <div class="form-group">
+              <select name="" id="city" class="form-control form-control-lg">
+                <option value="高雄市">高雄市</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <select name="" id="region" class="form-control form-control-lg">
+                <option value="新興區">新興區</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" id="address" placeholder="幸福路 520 號">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,94 +4,22 @@ layout: ./source/layout.ejs
 engine: ejs
 ---
 
+<div class="container mb-md-6">
+  <header class="header">
+    <div class="header-main-image bg-cover row justify-content-center align-items-center" style="background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=1347&q=80)">
+      <div class="col-md-6">
+        <h1 class="text-hide text-center mb-5">
+          付款成功
+          <img src="/images/lg-付款成功.svg" width="190" alt="">
+        </h1>
+        <a href="products.html" class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary d-none d-md-block">
+          繼續逛逛
+        </a>
 
-<section class="container my-md-5">
-  <div class="row carts">
-    <div class="col-md-8">
-      <h1 class="bg-primary-lighter h4 mb-0 py-4 text-center">
-        您的購物車
-      </h1>
-      <div class="cart-row d-flex flex-column flex-md-row py-3">
-        <div class="d-flex align-items-center flex-grow-1 mr-md-3">
-          <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
-            <div class="cart-image" style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"></div>
-          </div>
-          <div class="d-flex flex-column flex-md-row flex-md-grow-1">
-            <div class="flex-fill mr-md-4">
-              <span class="h5">抹茶馬卡龍</span><br>
-              <span>NT$ 450</span>
-            </div>
-            <div class="cart-control ml-md-auto mt-3 mt-md-0">
-              <div class="input-group input-group-lg" role="group" aria-label="Basic example">
-                <div class="input-group-prepend">
-                  <button type="button" class="btn btn-brand-light text-primary-light material-icons rounded-0">remove</button>
-                </div>
-                <input type="text" class="form-control" value="2">
-                <div class="input-group-append">
-                  <button type="button" class="btn btn-brand-light text-primary-light material-icons rounded-0">add</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="price ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-          <a href="#" class="btn d-none d-md-block"><span class="material-icons">delete_outline</span></a>
-          <span class="h5 mb-0 mr-md-3">NT$ 900</span>
-        </div>
       </div>
-      <div class="cart-row d-flex flex-column flex-md-row py-3">
-        <div class="d-flex align-items-center flex-grow-1 mr-md-3">
-          <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
-            <div class="cart-image" style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"></div>
-          </div>
-          <div class="d-flex flex-column flex-md-row flex-md-grow-1">
-            <div class="flex-fill mr-md-4">
-              <span class="h5">抹茶馬卡龍</span><br>
-              <span>NT$ 450</span>
-            </div>
-            <div class="cart-control ml-md-auto mt-3 mt-md-0">
-              <div class="input-group input-group-lg" role="group" aria-label="Basic example">
-                <div class="input-group-prepend">
-                  <button type="button" class="btn btn-brand-light text-primary-light material-icons rounded-0">remove</button>
-                </div>
-                <input type="text" class="form-control" value="2">
-                <div class="input-group-append">
-                  <button type="button" class="btn btn-brand-light text-primary-light material-icons rounded-0">add</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="price ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-          <a href="#" class="btn d-none d-md-block"><span class="material-icons">delete_outline</span></a>
-          <span class="h5 mb-0 mr-md-3">NT$ 900</span>
-        </div>
-      </div>
-
     </div>
-    <div class="col-md-4">
-      <div class="p-md-3 py-3 pt-0 cart-msg-box">
-        <h2 class="text-center cart-msg-title h4 py-3">訂單摘要</h2>
-        <hr class="border-white mt-0">
-        <div class="d-flex justify-content-between mb-2">
-          <span>小計</span>
-          <span>NT$ 2,700</span>
-        </div>
-        <div class="d-flex justify-content-between mb-3">
-          <span>運費</span>
-          <span>NT$ 300</span>
-        </div>
-        <div class="d-flex justify-content-between">
-          <span class="h5">總計</span>
-          <span class="h5">NT$ 3000</span>
-        </div>
-      </div>
-      <div class="negative-row-margin mx-md-0">
-        <button class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary">結帳</button>
-      </div>
-      
-    </div>
-  </div>
-</section>
+  </header>
+</div>
+<a href="products.html" class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary d-md-none">
+  繼續逛逛
+</a>

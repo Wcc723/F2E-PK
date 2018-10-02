@@ -1,0 +1,38 @@
+
+.process-steps {
+  $circle-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .step-circle {
+    height: $circle-size;
+    width: $circle-size;
+    border: 1px solid $primary-500;
+    border-radius: $circle-size;
+    position: relative;
+    background-color: theme-color('primary');
+    z-index: 1;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $primary-500;
+  }
+
+  .step-circle.active {
+    border-color: $primary-200;
+    &:after {
+      content: "";
+      height: $circle-size - 6;
+      width: $circle-size - 6;
+      display: block;
+      margin: 2px;
+      background-color: $primary-200;
+      border-radius: $circle-size;
+    }
+  }
+}

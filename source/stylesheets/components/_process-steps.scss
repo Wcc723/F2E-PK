@@ -12,6 +12,10 @@
     position: relative;
     background-color: theme-color('primary');
     z-index: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &:after {
     content: "";
@@ -30,9 +34,14 @@
       height: $circle-size - 6;
       width: $circle-size - 6;
       display: block;
-      margin: 2px;
       background-color: $primary-200;
       border-radius: $circle-size;
     }
+  }
+  .step-circle.completed {
+    content: "done";
+    font-size: 1rem;
+    background-color: $primary-200;
+    color: theme-color('primary');
   }
 }

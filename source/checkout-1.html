@@ -15,58 +15,64 @@ engine: ejs
             </div>
             <div class="col-6 d-flex align-items-center">
               <div class="process-steps w-100">
+                <div class="step-circle material-icons completed">
+                  done
+                </div>
                 <div class="step-circle material-icons active"></div>
                 <div class="step-circle material-icons"></div>
-                <div class="step-circle material-icons"></div>
               </div>
             </div>
           </div>
-        
-          <div class="form-row">
-            <div class="col-6">
-              <div class="form-group">
-                <label class="h4" for="lastname">姓氏</label>
-                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="lastname" placeholder="王">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-group">
-                <label class="h4" for="firstname">名字</label>
-                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="firstname" placeholder="小明">
-              </div>
-            </div>
-          </div>
-        
+
           <div class="form-group">
-            <label class="h4" for="tel">電話</label>
-            <input type="tel" class="form-control form-control-lg bg-primary-lighter" id="tel" placeholder="0912-345-678">
+            <label class="h4" for="credit">信用卡卡號</label>
+            <input type="text" class="form-control form-control-lg bg-primary-lighter" id="credit" placeholder="9012-3456-7890-1234">
           </div>
-        
-          <label class="h4" for="city">地址</label>
+          <label class="h4" for="cardname">持卡人姓名</label>
           <div class="form-row">
             <div class="col-6">
               <div class="form-group">
-                <select name="" id="city" class="form-control form-control-lg bg-primary-lighter">
-                  <option value="高雄市">高雄市</option>
+                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="cardname" placeholder="王">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="cardname-2" placeholder="小明">
+              </div>
+            </div>
+          </div>
+
+          <label class="h4" for="validity-period-month">有效期限</label>
+          <div class="form-row">
+            <div class="col-6">
+              <div class="form-group">
+                <select name="" id="validity-period-month" class="form-control form-control-lg bg-primary-lighter">
+                  <option value="">月</option>
                 </select>
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
-                <select name="" id="region" class="form-control form-control-lg bg-primary-lighter">
-                  <option value="新興區">新興區</option>
+                <select name="" id="validity-period-year" class="form-control form-control-lg bg-primary-lighter">
+                  <option value="">年</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="form-group mb-0">
-            <input type="text" class="form-control form-control-lg bg-primary-lighter" id="address" placeholder="幸福路 520 號">
+
+          <label class="h4" for="cvv2">有效期限</label>
+          <div class="form-row">
+            <div class="col-6">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="cvv2" placeholder="123">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
+
       <div class="negative-row-margin mx-lg-0">
-        <a href="checkout-1.html" class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary">下一步</a>
+        <a href="checkout-2.html" class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary">下一步</a>
       </div>
     </div>
 

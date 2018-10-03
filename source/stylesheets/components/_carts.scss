@@ -4,6 +4,9 @@
     min-width: 110px;
     background-position: center center;
     background-size: cover;
+    &.cart-image-sm {
+      height: 80px;
+    }
   }
   .cart-control {
     width: 160px;

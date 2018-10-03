@@ -240,8 +240,8 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius:               0; //.25rem !default;
+$border-radius-lg:            0; // .3rem !default;
 $border-radius-sm:            .2rem !default;
 
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
@@ -430,11 +430,11 @@ $input-padding-y-sm:                    $input-btn-padding-y-sm !default;
 $input-padding-x-sm:                    $input-btn-padding-x-sm !default;
 $input-line-height-sm:                  $input-btn-line-height-sm !default;
 
-$input-padding-y-lg:                    $input-btn-padding-y-lg !default;
+$input-padding-y-lg:                    1rem; //$input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
-$input-line-height-lg:                  $input-btn-line-height-lg !default;
+$input-line-height-lg:                  1.5; //$input-btn-line-height-lg !default;
 
-$input-bg:                              $white !default;
+$input-bg:                              $white; // $primary-200; //$white !default;
 $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-700 !default;
@@ -463,7 +463,8 @@ $input-height:                          calc(#{$input-height-inner} + #{$input-h
 $input-height-inner-sm:                 ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
 $input-height-sm:                       calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
 
-$input-height-inner-lg:                 ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
+$input-height-inner-lg:                 ($font-size-lg * $input-line-height-lg) + ($input-padding-y-lg * 2) !default;
+// 注意，這段修改後可能會無法與 btn-lg 等高
 $input-height-lg:                       calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
@@ -728,7 +729,7 @@ $jumbotron-bg:                      $gray-200 !default;
 $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-radius:                0; //$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;

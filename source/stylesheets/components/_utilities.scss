@@ -35,7 +35,7 @@
   }
 }
 
-// bg, text color
+// bg, text color, border color
 .bg-primary-lighter {
   background-color: $primary-200;
 }
@@ -45,7 +45,14 @@
 .text-primary-lighter {
   color: $primary-200 !important;
 }
+.border-primary-lighter {
+  border-color: $primary-200;
+}
 
+// Size
+.text-base-size {
+  font-size: 1rem !important;
+}
 
 // spacing
 .negative-row-margin {

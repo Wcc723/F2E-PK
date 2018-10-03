@@ -11,62 +11,39 @@ engine: ejs
         <div class="p-5 bg-primary text-primary-lighter">
           <div class="form-row mb-5">
             <div class="col-6">
-              <h1 class="text-primary-lighter">運送</h1>
+              <h1 class="text-primary-lighter">發票</h1>
             </div>
             <div class="col-6 d-flex align-items-center">
               <div class="process-steps w-100">
+                <div class="step-circle material-icons completed">
+                  done
+                </div>
+                <div class="step-circle material-icons completed">
+                  done
+                </div>
                 <div class="step-circle material-icons active"></div>
-                <div class="step-circle material-icons"></div>
-                <div class="step-circle material-icons"></div>
               </div>
             </div>
           </div>
-        
-          <div class="form-row">
-            <div class="col-6">
-              <div class="form-group">
-                <label class="h4" for="lastname">姓氏</label>
-                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="lastname" placeholder="王">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-group">
-                <label class="h4" for="firstname">名字</label>
-                <input type="text" class="form-control form-control-lg bg-primary-lighter" id="firstname" placeholder="小明">
-              </div>
-            </div>
-          </div>
-        
+
+          <nav class="nav nav-pills nav-fill nav-dark mb-5">
+            <a class="nav-item nav-link py-3 h4 active" href="#">電子發票</a>
+            <a class="nav-item nav-link py-3 h4" href="#">郵寄發票</a>
+          </nav>
+
           <div class="form-group">
-            <label class="h4" for="tel">電話</label>
-            <input type="tel" class="form-control form-control-lg bg-primary-lighter" id="tel" placeholder="0912-345-678">
+            <label class="h4" for="email">電子郵件信箱</label>
+            <input type="email" class="form-control form-control-lg bg-primary-lighter" id="email" placeholder="example@email.com">
           </div>
-        
-          <label class="h4" for="city">地址</label>
-          <div class="form-row">
-            <div class="col-6">
-              <div class="form-group">
-                <select name="" id="city" class="form-control form-control-lg bg-primary-lighter">
-                  <option value="高雄市">高雄市</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-group">
-                <select name="" id="region" class="form-control form-control-lg bg-primary-lighter">
-                  <option value="新興區">新興區</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="form-group mb-0">
-            <input type="text" class="form-control form-control-lg bg-primary-lighter" id="address" placeholder="幸福路 520 號">
+          <div class="form-group">
+            <label class="h4" for="vat-number">統一編號（選填）</label>
+            <input type="text" class="form-control form-control-lg bg-primary-lighter" id="vat-number" placeholder="12345678">
           </div>
         </div>
       </div>
-      
+
       <div class="negative-row-margin mx-lg-0">
-        <a href="checkout-1.html" class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary">下一步</a>
+        <a href="success.html" class="btn btn-accent btn-block btn-lg py-3 text-primary">下一步</a>
       </div>
     </div>
 

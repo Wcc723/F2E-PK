@@ -7722,10 +7722,22 @@ a.text-accent:hover, a.text-accent:focus {
       background-color: #EAF0ED;
       border-radius: 20px; }
   .process-steps .step-circle.completed {
-    content: "done";
     font-size: 1rem;
     background-color: #EAF0ED;
     color: #3F5D45; }
+  .process-steps.process-steps-dark {
+    border-color: #3F5D45; }
+    .process-steps.process-steps-dark:after {
+      background-color: #3F5D45; }
+    .process-steps.process-steps-dark .step-circle {
+      border-color: #3F5D45; }
+    .process-steps.process-steps-dark .step-circle.active {
+      border-color: #3F5D45; }
+      .process-steps.process-steps-dark .step-circle.active:after {
+        background-color: #3F5D45; }
+    .process-steps.process-steps-dark .step-circle.completed {
+      background-color: #3F5D45;
+      color: #EAF0ED; }
 
 .ui-checked-display {
   cursor: pointer; }

@@ -12,7 +12,6 @@
     position: relative;
     background-color: theme-color('primary');
     z-index: 1;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,9 +38,30 @@
     }
   }
   .step-circle.completed {
-    content: "done";
     font-size: 1rem;
     background-color: $primary-200;
     color: theme-color('primary');
+  }
+
+
+  // Theme
+  &.process-steps-dark {
+    border-color: theme-color('primary');
+    &:after {
+      background-color: theme-color('primary');
+    }
+    .step-circle {
+      border-color: theme-color('primary');
+    }
+    .step-circle.active {
+      border-color: theme-color('primary');
+      &:after {
+        background-color: theme-color('primary');
+      }
+    }
+    .step-circle.completed {
+      background-color: theme-color('primary');
+      color: $primary-200;
+    }
   }
 }

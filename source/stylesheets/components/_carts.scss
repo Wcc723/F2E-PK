@@ -9,7 +9,21 @@
     }
   }
   .cart-control {
-    width: 160px;
+    width: 145px;
+  }
+  .carts-input-group {
+    .form-control {
+      padding-top: 15px;
+      padding: 15px;
+      height: calc(1rem + 30px + 2px);
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .btn {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .cart-row {

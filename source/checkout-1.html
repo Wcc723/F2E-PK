@@ -2,6 +2,7 @@
 title: 產品列表
 layout: ./source/layout.ejs
 engine: ejs
+current: 
 ---
 
 <section class="container my-lg-6">
@@ -26,7 +27,12 @@ engine: ejs
 
           <div class="form-group">
             <label class="h4" for="credit">信用卡卡號</label>
-            <input type="text" class="form-control form-control-lg bg-primary-lighter" id="credit" placeholder="9012-3456-7890-1234">
+            <div class="input-group input-group-lg mb-3">
+              <input type="text" class="form-control bg-primary-lighter border-right-0" id="credit" placeholder="9012-3456-7890-1234">
+              <div class="input-group-append">
+                <span class="input-group-text material-icons bg-primary-lighter text-primary">credit_card</span>
+              </div>
+            </div>
           </div>
           <label class="h4" for="cardname">持卡人姓名</label>
           <div class="form-row">
@@ -72,7 +78,7 @@ engine: ejs
       </div>
 
       <div class="negative-row-margin mx-lg-0">
-        <a href="checkout-2.html" class="btn btn-accent btn-block rounded-0 btn-lg py-3 text-primary">下一步</a>
+        <a href="checkout-2.html" class="btn btn-accent btn-block btn-lg py-3 text-primary">下一步</a>
       </div>
     </div>
 

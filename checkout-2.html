@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>六角甜點工坊 - 產品列表</title>
+  <meta property="og:title" content="產品列表  | 六角甜點工坊" />
+  <meta property="og:description" content="使用 Bootstrap 結合 Sass 結束這回合吧" />
+  <meta property="og:site_name" content="六角學院" />
+  <meta property="og:locale" content="zh_TW" />
+  <link rel="icon" href="images/favicon_48.ico">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container">
+      <button class="navbar-toggler d-md-none d-flex align-items-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons">
+          menu
+        </i>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-all-dark.svg" width="220" height="40" alt="" class="d-none d-md-inline-block">
+        <img src="images/logotype-sm-dark.svg" width="114" height="18" alt="" class="d-inline-block d-md-none">
+      </a>
+      
+      <a class="nav-link d-flex align-items-center order-md-1" href="carts.html"><i class="material-icons">
+        shopping_cart
+        </i>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="products.html">甜點</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="register.html">登入</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    
+  </nav>
+
+  
+<section class="container my-lg-6">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="negative-row-margin mx-lg-0">
+        <div class="p-5 bg-primary text-primary-lighter">
+          <div class="form-row mb-5">
+            <div class="col-6">
+              <h1 class="text-primary-lighter">發票</h1>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <div class="process-steps w-100">
+                <div class="step-circle material-icons completed">
+                  done
+                </div>
+                <div class="step-circle material-icons completed">
+                  done
+                </div>
+                <div class="step-circle material-icons active"></div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="nav nav-pills nav-fill nav-dark mb-5">
+            <a class="nav-item nav-link py-3 h4 active" href="#">電子發票</a>
+            <a class="nav-item nav-link py-3 h4" href="#">郵寄發票</a>
+          </nav>
+
+          <div class="form-group">
+            <label class="h4" for="email">電子郵件信箱</label>
+            <input type="email" class="form-control form-control-lg bg-primary-lighter" id="email" placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label class="h4" for="vat-number">統一編號（選填）</label>
+            <input type="text" class="form-control form-control-lg bg-primary-lighter" id="vat-number" placeholder="12345678">
+          </div>
+        </div>
+      </div>
+
+      <div class="negative-row-margin mx-lg-0">
+        <a href="success.html" class="btn btn-accent btn-block btn-lg py-3 text-primary">下一步</a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 d-none d-lg-block">
+      <div class="card border-primary-lighter mb-4">
+        <h2 class="card-header text-primary-light text-center bg-primary-lighter border-primary-lighter">訂單摘要</h2>
+        <div class="card-body text-primary-light">
+          <div class="d-flex justify-content-between mb-2">
+            <span>小計</span>
+            <span>NT$ 2,700</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>運費</span>
+            <span>NT$ 300</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span class="h5">總計</span>
+            <span class="h5">NT$ 3000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card border-primary-lighter">
+        <h2 class="card-header text-primary-light text-center bg-primary-lighter border-primary-lighter">購物清單</h2>
+        <div class="card-body carts">
+          <div class="d-flex">
+            <div class="cart-image cart-image-sm mr-3" style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"></div>
+            <div class="d-flex align-items-center">
+              <div class="flex-fill mr-lg-4 text-primary-light">
+                <span class="h5">抹茶馬卡龍 (2)</span><br>
+                <span>NT$ 450</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mt-3">
+            <div class="cart-image cart-image-sm mr-3" style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"></div>
+            <div class="d-flex align-items-center">
+              <div class="flex-fill mr-lg-4 text-primary-light">
+                <span class="h5">抹茶馬卡龍 (2)</span><br>
+                <span>NT$ 450</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mt-3">
+            <div class="cart-image cart-image-sm mr-3" style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"></div>
+            <div class="d-flex align-items-center">
+              <div class="flex-fill mr-lg-4 text-primary-light">
+                <span class="h5">抹茶馬卡龍 (2)</span><br>
+                <span>NT$ 450</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="py-5 bg-primary">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+          <img src="images/logo-light.svg" width="40" height="40" alt="">
+          <span class="mx-3 text-white h4 mb-0">訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="col-md-5">
+          <div class="form-square form-square-withicon d-flex justify-content-between">
+            <label for="subscription" class="material-icons form-square-icon-left">
+              email
+            </label>
+            <input type="email" id="subscription" class="form-input w-100">
+            <button class="btn btn-accent btn-lg d-flex align-items-center">
+              <i class="material-icons">
+                arrow_forward
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-primary-lighter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 d-flex flex-column justify-content-between">
+          <div>
+            <img src="images/logotype-sm-dark.svg" height="27" alt="">
+          </div>
+          <ul class="list-unstyled mt-5">
+            <li>07-1234-5678</li>
+            <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
+            <li>800 高雄市新興區幸福路 520 號</li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-right d-none d-md-block">
+          <img src="images/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 mt-2">
+          <img src="images/ic-line@.svg" height="32" width="32" alt="">
+          <img src="images/ic-facebook.svg" height="32" width="32" alt="">
+        </div>
+        <div class="col-md-5 text-md-right mt-2">
+          <span>© 2018 Sweetaste* All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascripts/vendor.js"></script>
+</body>
+
+</html>
